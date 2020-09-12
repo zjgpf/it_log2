@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
+import SearchBar from './components/layouts/SearchBar';
+import BtnsModal from './components/layouts/BtnsModal';
+import Alerts from './components/layouts/Alerts';
+import Logs from './components/logs/Logs';
+import ModalAddEditLog from './components/logs/ModalAddEditLog';
+import ModalListTechs from './components/techs/ModalListTechs';
+import ModalAddTech from './components/techs/ModalAddTech';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store} >
+      <Fragment>
+        <Alerts />
+        <SearchBar />
+        <Logs />
+        <BtnsModal />
+        <ModalAddEditLog />
+        <ModalListTechs />
+        <ModalAddTech />
+      </Fragment>
+    </Provider>
   );
 }
 

@@ -1,0 +1,13 @@
+export const SET_LOADING = 'SET_LOADING';
+export const GET_LOGS = 'GET_LOGS';
+export const SET_MODAL = 'SET_MODAL';
+export const ADD_LOG = 'ADD_LOG';
+export const ADD_ALERT = 'ADD_ALERT';
+export const DELETE_ALERT = 'DELETE_ALERT';
+export const DELETE_LOG = 'DELETE_LOG';
+export const SET_CURRENT = 'SET_CURRENT';
+export const EDIT_LOG = 'EDIT_LOG';
+export const ADD_TECH = 'ADD_TECH';
+export const GET_TECHS = 'GET_TECH';
+export const DELETE_TECH = 'DELETE_TECH';
+export const SEARCH_LOGS = 'SEARCH_LOGS';
